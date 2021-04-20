@@ -15,17 +15,21 @@ Package maintainers are asked to replace any i3-gaps packages with the i3 packag
 
 ## What is i3-gaps?
 
+Rounded i3-gaps is a fork of i3-gaps that adds rounding.
+
 i3-gaps is a fork of [i3wm](https://www.i3wm.org), a tiling window manager for X11. It is kept up to date with upstream, adding a few additional features such as gaps between windows (see below for a complete list).
 
 ![i3](https://i.imgur.com/KC7GL4D.png)
 
 ## How do I install i3-gaps?
 
-Please refer to the [wiki](https://github.com/Airblader/i3/wiki/installation).
+This is a fork, build it yourself
 
-## Where can I get help?
+For bug reports or feature requests regarding Rounded i3-gaps specifically, open an issue on [GitHub](https://www.github.com/Resloved/i3). 
 
-For bug reports or feature requests regarding i3-gaps specifically, open an issue on [GitHub](https://www.github.com/Airblader/i3). If your issue is with core i3 functionality, please report it [upstream](https://www.github.com/i3/i3).
+If your issue is with i3-gaps, report it [here](https://github.com/Airblader/i3).
+
+If your issue is with core i3 functionality, please report it [upstream](https://www.github.com/i3/i3).
 
 For support & all other kinds of questions, you can ask your question on [GitHub Discussions](https://github.com/i3/i3/discussions).
 
@@ -74,6 +78,14 @@ gaps outer current toggle 60
 With `current` or `all` you can change gaps either for only the currently focused or all currently existing workspaces (note that this does not affect the global configuration itself).
 
 You can find an example configuration in the [wiki](https://github.com/Airblader/i3/wiki/Example-Configuration).
+
+### Rounded Window Corners
+
+Rounded corners can be configured by adding this to your config. `5` can be replaced with any integer, it simply defines how rounded the corners are.
+
+```
+border_radius 5
+```
 
 ### Smart Gaps
 
